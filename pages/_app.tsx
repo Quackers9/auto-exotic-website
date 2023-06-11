@@ -29,7 +29,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
           <HeaderMiddle links={[
               { link: '/', label: 'Home' },
-              { link: '/about', label: 'About Us' },
+              { link: '/about-us', label: 'About Us' },
             ]}
           />
           <Component {...pageProps} />

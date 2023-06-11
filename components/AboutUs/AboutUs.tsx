@@ -1,20 +1,30 @@
-import { Title, Text } from '@mantine/core';
+import { Container, Title, Text, Grid } from '@mantine/core';
+import { EmployeeCard } from '../EmployeeCard/EmployeeCard';
+import { employees } from '../../data/employees';
 import useStyles from './AboutUs.styles';
 
 export function AboutUs() {
   const { classes } = useStyles();
 
+  const employeeCards = employees.map((employee: any, index: number) => (
+    <Grid.Col key={index} xs={4}>
+      <EmployeeCard {...employee} />
+    </Grid.Col>
+  ));
+
   return (
     <>
-      <Title className={classes.title} align="center" mt={80}>
-        Your mum is {' '}
+      <Title className={classes.title} align="center" mt={60} mb={80}>
         <Text inherit variant="gradient" component="span">
-          Sexy
+          Employees
         </Text>
       </Title>
-      <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
-        wombo combo
-      </Text>
+
+      <Container>
+        <Grid>
+          {employeeCards}
+        </Grid>
+      </Container>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { Title, Grid } from '@mantine/core';
 import { VehicleCard } from '../VehicleCard/VehicleCard';
-import { Vehicle, VehicleClassLabel } from '../../public/vehicles';
+import { Vehicle, VehicleClassLabel } from '../../data/vehicles';
 import useStyles from './VehicleCardWrapper.styles';
 
 export function VehicleCardWrapper({ vehicles }: { vehicles: Vehicle[] }) {

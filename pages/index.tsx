@@ -1,6 +1,6 @@
 import { Container, Center, Title } from '@mantine/core';
 import { Welcome } from '../components/Welcome/Welcome';
-import { vehicles, VehicleClass } from '../public/vehicles';
+import { vehicles, VehicleClass } from '../data/vehicles';
 import { VehicleCardWrapper } from '../components/VehicleCardWrapper/VehicleCardWrapper';
 
 const groupBy = (xs: any, key: any) => xs.reduce((rv: any, x: any) => {

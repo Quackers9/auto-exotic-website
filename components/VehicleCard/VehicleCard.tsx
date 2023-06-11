@@ -1,6 +1,6 @@
 import { Card, Image, Text, Group, Badge } from '@mantine/core';
 // import { IconGasStation } from '@tabler/icons-react';
-import { Vehicle, VehicleClassLabel } from '../../public/vehicles';
+import { Vehicle, VehicleClassLabel } from '../../data/vehicles';
 import useStyles from './VehicleCard.styles';
 
 export function VehicleCard(vehicle: Vehicle) {
